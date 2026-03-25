@@ -48,7 +48,9 @@ const HeroSection = () => (
           תובנות שבועיות, שנאספו במיוחד בשבילך.
         </motion.p>
         <motion.a
-          href="#subscribe"
+          href="https://chat.whatsapp.com/DTLgiUJXtSDF8MKZqxcV0r?mode=gi_t"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-8 inline-block rounded-lg bg-gold px-8 py-3.5 font-body text-sm font-semibold text-primary shadow-lg transition-all hover:bg-gold-light hover:shadow-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
