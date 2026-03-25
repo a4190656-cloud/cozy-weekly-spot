@@ -12,18 +12,21 @@ const LatestInsight = () => (
           <time>25 במרץ, 2026</time>
         </div>
         <h3 className="mt-4 font-display text-2xl font-semibold text-foreground md:text-3xl">
-          האומנות של להקשיב לעצמך
+          בעלי ערך, לא מושלמים
         </h3>
         <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
-          השבוע אנחנו חוקרים את האיזון העדין בין אינטואיציה לשכל — איך הקשבה
-          לקול הפנימי שלך יכולה לפתוח בהירות רגשית עמוקה יותר ולשפר את קבלת
-          ההחלטות בחיי היומיום.
+          מי שמוכר לך שלמות — כנראה מוכר לך הצגה. אנשים לא מחפשים רובוטים
+          מושלמים, הם מחפשים בני אדם בעלי ערך. תהיו בדרך, תהיו אמיתיים,
+          ותביאו את הערך הייחודי שלכם — כשאתם פועלים מהמקום הזה, החיבור הופך
+          להרבה יותר חזק.
         </p>
         <a
-          href="#"
+          href="https://chat.whatsapp.com/DTLgiUJXtSDF8MKZqxcV0r?mode=gi_t"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-6 inline-flex items-center gap-1 font-body text-sm font-semibold text-gold transition-colors hover:text-gold-light"
         >
-          קראו עוד ←
+          הצטרפו לקהילה ←
         </a>
       </div>
     </div>
