@@ -2,34 +2,34 @@ import { Calendar } from "lucide-react";
 
 const insights = [
   {
-    title: "Finding Strength in Vulnerability",
-    date: "March 18, 2026",
-    preview: "Why showing your true emotions isn't weakness — it's the foundation of authentic connection and personal growth.",
+    title: "למצוא כוח בפגיעות",
+    date: "18 במרץ, 2026",
+    preview: "למה לחשוף את הרגשות האמיתיים שלך זה לא חולשה — זה הבסיס לחיבור אותנטי וצמיחה אישית.",
   },
   {
-    title: "The Power of Small Rituals",
-    date: "March 11, 2026",
-    preview: "How tiny daily habits can anchor your emotional world and create a sense of stability even in chaotic times.",
+    title: "הכוח של ריטואלים קטנים",
+    date: "11 במרץ, 2026",
+    preview: "איך הרגלים יומיומיים קטנים יכולים לעגן את העולם הרגשי שלך וליצור תחושת יציבות גם בזמנים סוערים.",
   },
   {
-    title: "When Silence Speaks Louder",
-    date: "March 4, 2026",
-    preview: "Exploring the underrated skill of comfortable silence and what it reveals about trust in relationships.",
+    title: "כשהשקט מדבר חזק יותר",
+    date: "4 במרץ, 2026",
+    preview: "חקירה של המיומנות המוערכת מדי של שתיקה נוחה ומה היא חושפת על אמון במערכות יחסים.",
   },
   {
-    title: "Redefining Success on Your Terms",
-    date: "February 25, 2026",
-    preview: "Moving beyond external validation to build an inner compass that guides meaningful life choices.",
+    title: "להגדיר מחדש הצלחה בתנאים שלך",
+    date: "25 בפברואר, 2026",
+    preview: "לצאת מעבר לוולידציה חיצונית ולבנות מצפן פנימי שמנחה בחירות חיים משמעותיות.",
   },
   {
-    title: "The Courage to Begin Again",
-    date: "February 18, 2026",
-    preview: "Every restart is an act of bravery. How to embrace fresh starts without carrying the weight of past chapters.",
+    title: "האומץ להתחיל מחדש",
+    date: "18 בפברואר, 2026",
+    preview: "כל התחלה מחדש היא מעשה של אומץ. איך לחבק התחלות חדשות בלי לשאת את המשקל של פרקים קודמים.",
   },
   {
-    title: "Gratitude Beyond the Surface",
-    date: "February 11, 2026",
-    preview: "Going deeper than 'thank you' — cultivating a gratitude practice that truly shifts your perspective.",
+    title: "הכרת תודה מעבר לשטחיות",
+    date: "11 בפברואר, 2026",
+    preview: "ללכת עמוק מעבר ל'תודה' — לטפח תרגול של הכרת תודה שבאמת משנה את הפרספקטיבה שלך.",
   },
 ];
 
@@ -37,7 +37,7 @@ const InsightFeed = () => (
   <section className="bg-warm-cream py-16">
     <div className="container mx-auto px-6">
       <h2 className="font-display text-3xl font-bold text-foreground md:text-4xl">
-        The Insight Feed
+        פיד התובנות
       </h2>
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {insights.map((item) => (
@@ -59,7 +59,7 @@ const InsightFeed = () => (
               href="#"
               className="mt-4 text-sm font-semibold text-gold transition-colors hover:text-gold-light"
             >
-              Read more →
+              קראו עוד ←
             </a>
           </article>
         ))}
