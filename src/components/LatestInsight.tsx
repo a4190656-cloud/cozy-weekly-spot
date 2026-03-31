@@ -26,7 +26,7 @@ const LatestInsight = () => {
         <div className="p-8 md:p-10">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Calendar className="h-4 w-4" />
-            <time>31 במרץ, 2026</time>
+            <time>י״א ניסן תשפ״ו</time>
           </div>
           <h3 className="mt-4 font-display text-2xl font-semibold text-foreground md:text-3xl">
             מלכודת ה״מי שאני אמור להיות״ 🚨
