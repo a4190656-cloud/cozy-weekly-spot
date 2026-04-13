@@ -216,7 +216,7 @@ const InsightFeed = () => (
       >
         פיד התובנות
       </motion.h2>
-      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid items-start gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {insights.map((item, i) => (
           <InsightCard key={item.title} item={item} i={i} />
         ))}
