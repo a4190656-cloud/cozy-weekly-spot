@@ -13,8 +13,8 @@ export default {
       },
     },
     fontFamily: {
-      display: ['Playfair Display', 'serif'],
-      body: ['Inter', 'sans-serif'],
+      display: ['Rubik', 'sans-serif'],
+      body: ['Heebo', 'sans-serif'],
     },
     extend: {
       colors: {

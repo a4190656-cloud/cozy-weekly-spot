@@ -8,7 +8,7 @@ const LatestInsight = () => {
   return (
     <section className="container mx-auto px-6 py-16">
       <motion.h2
-        className="font-display text-3xl font-bold text-foreground md:text-4xl"
+        className="font-display text-2xl font-bold text-foreground md:text-3xl lg:text-4xl"
         initial={{ opacity: 0, x: 40 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-50px" }}
@@ -28,7 +28,7 @@ const LatestInsight = () => {
             <Calendar className="h-4 w-4" />
             <time>י״ח ניסן תשפ״ו</time>
           </div>
-          <h3 className="mt-4 font-display text-2xl font-semibold text-foreground md:text-3xl">
+          <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
             שכל ורגש — צוות, לא קרב 🔥
           </h3>
 

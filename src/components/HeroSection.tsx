@@ -32,7 +32,7 @@ const HeroSection = () => (
       </motion.div>
       <div className="text-center md:text-right">
         <motion.h1
-          className="font-display text-4xl font-bold tracking-tight text-primary-foreground md:text-6xl"
+          className="font-display text-4xl font-bold tracking-tight text-primary-foreground md:text-5xl lg:text-6xl"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
@@ -40,7 +40,7 @@ const HeroSection = () => (
           התובנה השבועית
         </motion.h1>
         <motion.p
-          className="mt-4 max-w-lg font-body text-lg text-gold-light md:text-xl"
+          className="mt-4 max-w-lg font-body text-base text-gold-light md:text-lg lg:text-xl"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.5 }}
