@@ -173,7 +173,7 @@ const InsightCard = ({ item, i }: { item: (typeof insights)[0]; i: number }) => 
         <Calendar className="h-3.5 w-3.5" />
         <time>{item.date}</time>
       </div>
-      <h3 className="mt-3 font-display text-lg font-semibold text-foreground group-hover:text-navy-light">
+      <h3 className="mt-3 font-display text-base font-semibold text-foreground md:text-lg group-hover:text-navy-light">
         {item.title}
       </h3>
 
@@ -208,7 +208,7 @@ const InsightFeed = () => (
   <section className="bg-warm-cream py-16">
     <div className="container mx-auto px-6">
       <motion.h2
-        className="font-display text-3xl font-bold text-foreground md:text-4xl"
+        className="font-display text-2xl font-bold text-foreground md:text-3xl lg:text-4xl"
         initial={{ opacity: 0, x: 40 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-50px" }}
