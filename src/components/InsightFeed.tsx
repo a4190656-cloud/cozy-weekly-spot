@@ -64,6 +64,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "הרצון שלי מול העיניים של כולם 👀",
+    icon: Eye,
     date: "כ״ד ניסן תשפ״ו",
     preview:
       "יש מציאות כואבת בה אנשים איבדו את הבחירה האישית בלי לשים לב. התת-מודע מקבל החלטות לפי איך שהוא יודע שיסתכלו עליו.",
@@ -79,6 +80,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "שכל ורגש — צוות, לא קרב 🔥",
+    icon: Brain,
     date: "י״ח ניסן תשפ״ו",
     preview:
       "אל תטעה לחשוב שאדם רגשי הוא ״פחות שכלי״. כדי להרגיש באמת — צריך להבין. רגש שלא עובר דרך הבנה הוא תגובה.",
@@ -92,6 +94,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "מלכודת ה״מי שאני אמור להיות״ 🚨",
+    icon: UserCog,
     date: "י״א ניסן תשפ״ו",
     preview:
       "יש רגעים בחיים שבהם הכל מרגיש ״יותר מדי״. פתאום האחריות כבדה, השליחות מרגישה כמו משקולת, והדופק עולה בלי סיבה ברורה.",
@@ -115,6 +118,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "בעלי ערך, לא מושלמים",
+    icon: Sparkles,
     date: "ה׳ ניסן תשפ״ו",
     preview:
       "מכירים את זה שאתם צריכים עזרה במשהו? אתם פונים לאדם, והדבר הראשון שהוא אומר לכם זה: ״אני מושלם בתחום הזה. אין אצלי טעויות״. פתאום, משהו בפנים מתכווץ.",
@@ -132,6 +136,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "ביקורת עצמית — האויב הפנימי",
+    icon: MessageCircleWarning,
     date: "כ״ז אדר תשפ״ו",
     preview:
       "לפעמים אנחנו המבקרים הכי קשוחים של עצמנו. הביקורת העצמית לא בונה אותנו — היא מפרקת.",
@@ -151,6 +156,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "המכתב שיושב אצלכם בכיס",
+    icon: Mail,
     date: "כ׳ אדר תשפ״ו",
     preview:
       "לכל אחד יש ערך מוסף ששום אוניברסיטה לא יכולה ללמד. כשאתה מעביר את ה'מכתב' שניתן לך — השם כבר ידאג לשאר.",
@@ -170,6 +176,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "להחזיר לעצמך בחירה",
+    icon: Compass,
     date: "ו׳ אדר תשפ״ו",
     preview:
       "לפעמים אנחנו נמנעים מלעשות דברים לא כי אנחנו לא רוצים, אלא כי תחושת הכפייה מכבה אותנו.",
@@ -183,6 +190,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "רושם ראשוני — המנגנון ההרסני",
+    icon: Users,
     date: "כ״ח שבט תשפ״ו",
     preview:
       "אנחנו ממהרים לקטלג אנשים ברגע הראשון ולא נותנים להם להתרומם.",
@@ -198,6 +206,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "הודיה — הפיצוח לאנרגיה",
+    icon: HandHeart,
     date: "כ״א שבט תשפ״ו",
     preview:
       "80% ממה שמניע אותנו זה אנרגיה. והפיצוח הכי פשוט שמעלה אנרגיה? הודיה.",
@@ -217,6 +226,7 @@ https://a4190656-cloud.github.io/AO-TIMLULl/`,
   },
   {
     title: "צמיחה מתוך סערה",
+    icon: Sprout,
     date: "י״ד שבט תשפ״ו",
     preview:
       "כשטוב לנו — אנחנו לא רגועים, כי המוח זוכר את הקשיים. אבל כל פחד וכל מכשול הוא חומר גלם לגרסה חזקה יותר שלך.",
@@ -249,16 +259,24 @@ const InsightCard = ({ item, i }: { item: (typeof insights)[0]; i: number }) => 
 
   return (
     <motion.article
-      className="group flex flex-col rounded-xl border border-border bg-background p-6 shadow-sm transition-all hover:shadow-md"
+      className="group relative flex flex-col overflow-hidden rounded-xl border border-border bg-background p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
       custom={i}
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-30px" }}
     >
-      <div className="flex items-center gap-2 text-xs text-muted-foreground">
-        <Calendar className="h-3.5 w-3.5" />
-        <time>{item.date}</time>
+      {/* Decorative accent strip */}
+      <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-l from-gold/0 via-gold/60 to-gold/0 opacity-60 transition-opacity group-hover:opacity-100" />
+
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex items-center gap-2 text-xs text-muted-foreground">
+          <Calendar className="h-3.5 w-3.5" />
+          <time>{item.date}</time>
+        </div>
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-gold/15 to-teal/10 text-gold ring-1 ring-gold/20 transition-transform group-hover:scale-110 group-hover:rotate-3">
+          <item.icon className="h-5 w-5" strokeWidth={2.2} />
+        </div>
       </div>
       <h3 className="mt-3 font-display text-base font-semibold text-foreground md:text-lg group-hover:text-navy-light">
         {item.title}
