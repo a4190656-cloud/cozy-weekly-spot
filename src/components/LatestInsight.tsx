@@ -1,4 +1,4 @@
-import { Calendar } from "lucide-react";
+import { Calendar, ShieldAlert } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -17,23 +17,40 @@ const LatestInsight = () => {
         התובנה האחרונה
       </motion.h2>
       <motion.div
-        className="mt-8 overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md"
+        className="relative mt-8 overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
+        {/* Decorative gradient accent */}
+        <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-l from-gold via-teal to-navy-light" />
+        <div className="pointer-events-none absolute -left-16 -top-16 h-48 w-48 rounded-full bg-gold/10 blur-3xl" />
+
         <div className="p-8 md:p-10">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Calendar className="h-4 w-4" />
-            <time>ח׳ אייר תשפ״ו</time>
+          {/* Icon badge */}
+          <div className="flex items-start justify-between gap-4">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Calendar className="h-4 w-4" />
+              <time>ט״ו אייר תשפ״ו</time>
+            </div>
+            <motion.div
+              initial={{ scale: 0, rotate: -30 }}
+              whileInView={{ scale: 1, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ type: "spring", stiffness: 180, delay: 0.3 }}
+              className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-navy shadow-md ring-4 ring-gold/10"
+            >
+              <ShieldAlert className="h-7 w-7" strokeWidth={2.2} />
+            </motion.div>
           </div>
+
           <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
-            ההבדל בין הנאה להתמכרות ✔️
+            כשהאזעקה מפחידה יותר מהטיל 🚀
           </h3>
 
           <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
-            רבים מאיתנו נוטים לבלבל בין הנאה לבין התמכרות, אבל האמת היא שמדובר בשני קטבים הפוכים לגמרי.
+            לפחד זה טבעי. פחד הוא מנגנון הישרדותי, ״מערכת אזעקה״ שנועדה לשמור עלינו. אבל הבעיה האמיתית מתחילה לא כשאנחנו מפחדים ממשהו חיצוני, אלא כשאנחנו מתחילים לפחד מהתחושה של הפחד עצמה.
           </p>
 
           <motion.div
@@ -44,36 +61,18 @@ const LatestInsight = () => {
           >
             <div className="mt-4 max-w-2xl space-y-4 font-body leading-relaxed text-muted-foreground">
               <p>
-                ההבדל המהותי הוא פשוט: <strong>הנאה</strong> היא משהו שאתם מוסיפים לחיים כדי להעשיר אותם. אתם בוחרים בה, אתם שולטים בה, והיא משאירה אתכם עם טעם של עוד — אבל בנחת.
+                פסיכיאטרים מצביעים על נתון מדהים: בחרדות, <strong>90% מהסבל נובע מהפחד מהפחד</strong>, ורק 10% מהחרדה המקורית.
               </p>
               <p>
-                <strong>התמכרות</strong> היא משהו שאתם מוסיפים לחיים כי אתם כבר לא יכולים בלעדיו. היא זו שבוחרת בכם, היא שולטת בלו״ז שלכם, והיא משאירה אתכם עם תחושת ריקנות ברגע שהיא נגמרת.
+                <strong>למה זה קורה?</strong> כי פחד רגיל דוחף אותנו לזהירות, אבל הפחד מהפחד גורם לנו לקיפאון. הוא הופך את הרגש לאויב, ובמלחמה נגד הרגשות של עצמנו — אנחנו תמיד מפסידים.
               </p>
-              <p>שאלו את עצמכם שלוש שאלות וכך תדעו אם אתם מכורים או לא:</p>
-              <ol className="list-decimal space-y-2 pr-5">
-                <li>האם יש לי בחירה ואני יכול להחליט יום אחד שאני לא עושה את זה?</li>
-                <li>האם זה בא על חשבון דברים אחרים שחשובים לי כמו משפחה, שינה וכד׳?</li>
-                <li>האם המינון עולה מפעם לפעם שאני עושה את זה?</li>
-              </ol>
               <p>
-                <strong>השורה התחתונה:</strong> הנאה היא כלי לעבודה — התמכרות היא הבוס שלכם. ביום שבו ה״תענוג״ מפסיק לתת לכם אנרגיה ומתחיל לגבות מכם ריבית — זה הסימן שזה כבר לא בשליטתכם.
+                הפתרון הוא לא ״להילחם״ אלא פשוט לאפשר לגוף להרגיש אותה. להיות שם רגע בשבילו, בלי שיפוטיות.
               </p>
-              <p>המשך יום נעים! 🖤</p>
-
-              <div className="rounded-xl border border-gold/30 bg-gold/5 p-4">
-                <p className="font-semibold text-foreground">🛡️ הגיע הזמן לגלות את האמת</p>
-                <p className="mt-2">
-                  פיתחתי עבורכם אתר ייעודי לאבחון עצמי מהיר: 15 שאלות שיגלו לכם בדיוק איפה אתם ממוקמים על הציר שבין הנאה להתמכרות. האבחון אנונימי לחלוטין.
-                </p>
-                <a
-                  href="https://a4190656-cloud.github.io/AO-TIMLULl/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-3 inline-block font-semibold text-gold transition-colors hover:text-gold-light"
-                >
-                  כניסה לאבחון ←
-                </a>
-              </div>
+              <p>
+                ברגע שמפסיקים לפחד מהתחושה — ה־90% האלו פשוט מתפוגגים. ועם ה־10% שנותרו? הרבה יותר קל להתמודד.
+              </p>
+              <p>המשך יום מוצלח! 👌</p>
             </div>
           </motion.div>
 
