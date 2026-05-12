@@ -46,7 +46,7 @@ const LatestInsight = () => {
           </div>
 
           <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
-            כשהאזעקה מפחידה יותר מהטיל 🚀
+            כשהאזעקה מפחידה יותר מהטיל
           </h3>
 
           <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
