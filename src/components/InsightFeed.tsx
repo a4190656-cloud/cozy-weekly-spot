@@ -12,6 +12,7 @@ import {
   HandHeart,
   Sprout,
   Pill,
+  ShieldAlert,
   type LucideIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";

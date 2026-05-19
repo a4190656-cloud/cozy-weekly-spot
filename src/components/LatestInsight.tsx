@@ -1,4 +1,4 @@
-import { Calendar, ShieldAlert } from "lucide-react";
+import { Calendar, Flame } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -32,7 +32,7 @@ const LatestInsight = () => {
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Calendar className="h-4 w-4" />
-              <time>ט״ו אייר תשפ״ו</time>
+              <time>כ״ב אייר תשפ״ו</time>
             </div>
             <motion.div
               initial={{ scale: 0, rotate: -30 }}
@@ -41,16 +41,16 @@ const LatestInsight = () => {
               transition={{ type: "spring", stiffness: 180, delay: 0.3 }}
               className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-navy shadow-md ring-4 ring-gold/10"
             >
-              <ShieldAlert className="h-7 w-7" strokeWidth={2.2} />
+              <Flame className="h-7 w-7" strokeWidth={2.2} />
             </motion.div>
           </div>
 
           <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
-            כשהאזעקה מפחידה יותר מהטיל
+            כמו זבובים אחרי אור מהבהב
           </h3>
 
           <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
-            לפחד זה טבעי. פחד הוא מנגנון הישרדותי, ״מערכת אזעקה״ שנועדה לשמור עלינו. אבל הבעיה האמיתית מתחילה לא כשאנחנו מפחדים ממשהו חיצוני, אלא כשאנחנו מתחילים לפחד מהתחושה של הפחד עצמה.
+            כמו זבובים אחרי אור מהבהב, אנחנו רצים אחרי כל אושיית רשת שמספרת לנו איך צריך לחיות, מה נכון לחשוב ואיך המערכות יחסים שלנו אמורות להיראות. קוראים לזה בשם יפה: ״השפעה״. בפועל? זו הנדסת תודעה מטורפת שמשבשת לנו את החיים – ומוציאה לנו את שמחת החיים!
           </p>
 
           <motion.div
@@ -61,18 +61,18 @@ const LatestInsight = () => {
           >
             <div className="mt-4 max-w-2xl space-y-4 font-body leading-relaxed text-muted-foreground">
               <p>
-                פסיכיאטרים מצביעים על נתון מדהים: בחרדות, <strong>90% מהסבל נובע מהפחד מהפחד</strong>, ורק 10% מהחרדה המקורית.
+                מתי הפסקנו להאמין לעצמנו? מתי החלפנו את החינוך הטוב, הטהור והנקי שקיבלנו, את הלב הפשוט שלנו – בסטטוס של אדם זר שבסך הכל מחפש עוד צפיות ומכירות?
               </p>
               <p>
-                <strong>למה זה קורה?</strong> כי פחד רגיל דוחף אותנו לזהירות, אבל הפחד מהפחד גורם לנו לקיפאון. הוא הופך את הרגש לאויב, ובמלחמה נגד הרגשות של עצמנו — אנחנו תמיד מפסידים.
+                <strong>הנדסת התודעה בימינו היא משהו מטורף וכמעט בלתי הפיך.</strong> היא נכנסת לפינות הכי רגישות, הורסת בתים עם שטיפות מוח מוזרות על איך צריך להיראות בית יהודי, ומורידה לנו את שמחת החיים לאפס!
               </p>
               <p>
-                הפתרון הוא לא ״להילחם״ אלא פשוט לאפשר לגוף להרגיש אותה. להיות שם רגע בשבילו, בלי שיפוטיות.
+                הייתי אמור לכתוב כאן עכשיו איזה פתרון מלומד איך להתמודד עם זה... אבל האמת היא? שעצם המודעות לזה, ההבנה שזה קורה לנו מתחת לרדאר – זה כבר 90% מהפתרון!
               </p>
               <p>
-                ברגע שמפסיקים לפחד מהתחושה — ה־90% האלו פשוט מתפוגגים. ועם ה־10% שנותרו? הרבה יותר קל להתמודד.
+                ברגע שאתה קולט שמהנדסים אותך, המשחק נגמר והבחירה חוזרת אליך.
               </p>
-              <p>המשך יום מוצלח! 👌</p>
+              <p>המשך יום מוצלח לכולנו!</p>
             </div>
           </motion.div>
 
