@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import { MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 
 type Reaction = { key: string; emoji: string; label: string };
