@@ -340,6 +340,8 @@ const InsightCard = ({ item, i }: { item: (typeof insights)[0]; i: number }) => 
       >
         {expanded ? "הצג פחות ↑" : "המשך קריאה ↓"}
       </button>
+
+      <Reactions insightId={item.title} size="sm" />
     </motion.article>
   );
 };
