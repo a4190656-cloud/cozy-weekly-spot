@@ -81,6 +81,8 @@ const LatestInsight = () => {
           >
             {expanded ? "הצג פחות ↑" : "המשך קריאה ↓"}
           </button>
+
+          <Reactions insightId="latest-defense-is-attack" />
         </div>
       </motion.div>
     </section>
