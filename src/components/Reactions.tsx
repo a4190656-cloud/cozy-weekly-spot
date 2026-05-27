@@ -134,6 +134,21 @@ const Reactions = ({ insightId, size = "md" }: ReactionsProps) => {
           ))}
         </AnimatePresence>
       </div>
+
+      <motion.a
+        href="https://chat.whatsapp.com/DTLgiUJXtSDF8MKZqxcV0r?mode=gi_t"
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ y: -2 }}
+        whileTap={{ scale: 0.94 }}
+        className={`group/comment inline-flex items-center gap-1.5 rounded-full border border-teal/30 bg-gradient-to-br from-teal/10 to-gold/10 px-3 py-1.5 font-body font-semibold text-navy shadow-sm backdrop-blur-xl transition-colors hover:border-teal/60 hover:text-navy-light ${
+          isSm ? "text-[11px]" : "text-xs md:text-sm"
+        }`}
+        aria-label="הוסיפו תגובה בקבוצת הוואטסאפ"
+      >
+        <MessageCircle className={`${isSm ? "h-3.5 w-3.5" : "h-4 w-4"} transition-transform group-hover/comment:-rotate-12`} strokeWidth={2.4} />
+        <span>הוסיפו תגובה</span>
+      </motion.a>
     </div>
   );
 };
