@@ -13,6 +13,7 @@ import {
   Sprout,
   Pill,
   ShieldAlert,
+  Flame,
   type LucideIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
