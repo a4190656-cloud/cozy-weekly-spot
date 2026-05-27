@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Reactions from "./Reactions";
 
 type Insight = {
   title: string;
