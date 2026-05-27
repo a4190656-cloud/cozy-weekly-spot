@@ -1,4 +1,4 @@
-import { Calendar, Flame } from "lucide-react";
+import { Calendar, Swords } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
