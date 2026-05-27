@@ -1,4 +1,4 @@
-import { Calendar, Flame } from "lucide-react";
+import { Calendar, Swords } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -32,7 +32,7 @@ const LatestInsight = () => {
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Calendar className="h-4 w-4" />
-              <time>כ״ב אייר תשפ״ו</time>
+              <time>כ״ט אייר תשפ״ו</time>
             </div>
             <motion.div
               initial={{ scale: 0, rotate: -30 }}
@@ -41,16 +41,16 @@ const LatestInsight = () => {
               transition={{ type: "spring", stiffness: 180, delay: 0.3 }}
               className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-navy shadow-md ring-4 ring-gold/10"
             >
-              <Flame className="h-7 w-7" strokeWidth={2.2} />
+              <Swords className="h-7 w-7" strokeWidth={2.2} />
             </motion.div>
           </div>
 
           <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
-            כמו זבובים אחרי אור מהבהב
+            ההגנה הכי טובה היא התקפה?!
           </h3>
 
           <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
-            כמו זבובים אחרי אור מהבהב, אנחנו רצים אחרי כל אושיית רשת שמספרת לנו איך צריך לחיות, מה נכון לחשוב ואיך המערכות יחסים שלנו אמורות להיראות. קוראים לזה בשם יפה: ״השפעה״. בפועל? זו הנדסת תודעה מטורפת שמשבשת לנו את החיים – ומוציאה לנו את שמחת החיים!
+            מכירים את הרגע הזה שמישהו קרוב אליכם אומר לכם משהו קטן, אולי אפילו בצחוק, שנוגע לכם בדיוק בנקודה הכי רגישה? ופתאום, בשנייה אחת, אתם מתפוצצים עליו בחזרה — שולפים את ״רשימת המכולת״ של כל הטעויות שהוא עשה מאז שהוא נולד, ויורים לכל הכיוונים בלי לרחם.
           </p>
 
           <motion.div
@@ -61,18 +61,15 @@ const LatestInsight = () => {
           >
             <div className="mt-4 max-w-2xl space-y-4 font-body leading-relaxed text-muted-foreground">
               <p>
-                מתי הפסקנו להאמין לעצמנו? מתי החלפנו את החינוך הטוב, הטהור והנקי שקיבלנו, את הלב הפשוט שלנו – בסטטוס של אדם זר שבסך הכל מחפש עוד צפיות ומכירות?
+                למה זה קורה לנו? כי המוח שלנו מזהה סכנה. כשמישהו נוגע לנו בסדק פנימי, בבושה, בחוסר ביטחון או בפחד — אנחנו נפגעים והאגו נכנס לפניקה.
               </p>
               <p>
-                <strong>הנדסת התודעה בימינו היא משהו מטורף וכמעט בלתי הפיך.</strong> היא נכנסת לפינות הכי רגישות, הורסת בתים עם שטיפות מוח מוזרות על איך צריך להיראות בית יהודי, ומורידה לנו את שמחת החיים לאפס!
+                הוא אומר לעצמו: ״אם אני אשאר כאן בשקט, הוא יראה את החולשה שלי״. אז במקום לעצור ולהגיד את האמת הפשוטה: <strong>״וואו, מה שאמרת עכשיו ממש פגע בי״</strong> או <strong>״זה הבהיל אותי״</strong> — המוח בוחר בקיצור הדרך האוטומטי וההישרדותי ביותר: התקפה.
               </p>
               <p>
-                הייתי אמור לכתוב כאן עכשיו איזה פתרון מלומד איך להתמודד עם זה... אבל האמת היא? שעצם המודעות לזה, ההבנה שזה קורה לנו מתחת לרדאר – זה כבר 90% מהפתרון!
+                אגב, גם בעולם הקרב מגע זה הסוד — ההגנה הכי טובה היא התקפה! בזירה זה מציל חיים כי המטרה היא להמם את הצד השני, אבל בחיים האמיתיים ובמערכות יחסים? לא תמיד זה נכון...
               </p>
-              <p>
-                ברגע שאתה קולט שמהנדסים אותך, המשחק נגמר והבחירה חוזרת אליך.
-              </p>
-              <p>המשך יום מוצלח לכולנו!</p>
+              <p>המשך יום מוצלח</p>
             </div>
           </motion.div>
 
