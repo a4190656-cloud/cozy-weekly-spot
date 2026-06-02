@@ -136,7 +136,7 @@ const Reactions = ({ insightId, size = "md" }: ReactionsProps) => {
       </div>
 
       <motion.a
-        href="https://chat.whatsapp.com/DTLgiUJXtSDF8MKZqxcV0r?mode=gi_t"
+        href={`https://wa.me/972534190656?text=${encodeURIComponent("היי 🙌 קראתי את התובנה השבועית ורציתי לשתף אותך בתגובה שלי:\n\n")}`}
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ y: -2 }}
