@@ -1,4 +1,4 @@
-import { Calendar, Swords } from "lucide-react";
+import { Calendar, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Reactions from "./Reactions";
@@ -34,7 +34,7 @@ const LatestInsight = () => {
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Calendar className="h-4 w-4" />
-              <time>כ״ט אייר תשפ״ו</time>
+              <time>ו׳ סיון תשפ״ו</time>
             </div>
             <motion.div
               initial={{ scale: 0, rotate: -30 }}
@@ -43,16 +43,16 @@ const LatestInsight = () => {
               transition={{ type: "spring", stiffness: 180, delay: 0.3 }}
               className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-navy shadow-md ring-4 ring-gold/10"
             >
-              <Swords className="h-7 w-7" strokeWidth={2.2} />
+              <Globe className="h-7 w-7" strokeWidth={2.2} />
             </motion.div>
           </div>
 
           <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
-            ההגנה הכי טובה היא התקפה?!
+            האינטרנט האנושי שלך
           </h3>
 
           <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
-            מכירים את הרגע הזה שמישהו קרוב אליכם אומר לכם משהו קטן, אולי אפילו בצחוק, שנוגע לכם בדיוק בנקודה הכי רגישה? ופתאום, בשנייה אחת, אתם מתפוצצים עליו בחזרה — שולפים את ״רשימת המכולת״ של כל הטעויות שהוא עשה מאז שהוא נולד, ויורים לכל הכיוונים בלי לרחם.
+            תדמיינו את הסיטואציה הבאה: אתם באמצע נסיעה, ופתאום נדלקת מנורה אדומה ומלחיצה בלוח המחוונים. המוח שלכם מיד נכנס לסרטים: ״הלך המנוע״, ״זה יעלה אלפים״, ״נתקעתי באמצע שום מקום״. הלחץ מטפס ל-100%.
           </p>
 
           <motion.div
@@ -63,15 +63,18 @@ const LatestInsight = () => {
           >
             <div className="mt-4 max-w-2xl space-y-4 font-body leading-relaxed text-muted-foreground">
               <p>
-                למה זה קורה לנו? כי המוח שלנו מזהה סכנה. כשמישהו נוגע לנו בסדק פנימי, בבושה, בחוסר ביטחון או בפחד — אנחנו נפגעים והאגו נכנס לפניקה.
+                עכשיו, תדמיינו שאתם מרימים טלפון לחבר שמבין בזה, והוא אומר לכם משפט אחד: ״תירגע, זה כולה חיישן קטן. סע חופשי, נטפל בזה מחר״.
               </p>
               <p>
-                הוא אומר לעצמו: ״אם אני אשאר כאן בשקט, הוא יראה את החולשה שלי״. אז במקום לעצור ולהגיד את האמת הפשוטה: <strong>״וואו, מה שאמרת עכשיו ממש פגע בי״</strong> או <strong>״זה הבהיל אותי״</strong> — המוח בוחר בקיצור הדרך האוטומטי וההישרדותי ביותר: התקפה.
+                מה קרה ברגע הזה? הבעיה הטכנית לא נעלמה, המנורה עדיין דולקת – אבל הלחץ הפנימי? צנח ברגע.
               </p>
               <p>
-                אגב, גם בעולם הקרב מגע זה הסוד — ההגנה הכי טובה היא התקפה! בזירה זה מציל חיים כי המטרה היא להמם את הצד השני, אבל בחיים האמיתיים ובמערכות יחסים? לא תמיד זה נכון...
+                זה בדיוק הכוח של קשרים אנושיים. דווקא לאנשים חזקים ועצמאיים יש נטייה להגיד: ״אני אסתדר לבד, אני לא צריך אף אחד״. זה אולי נכון, אתם כנראה תסתדרו. אבל למה לעשות את זה קשה ומורכב, כשיש לכם חבר שיכול להפוך את זה לפשוט ברגע?
               </p>
-              <p>המשך יום מוצלח</p>
+              <p>
+                בשורה התחתונה: בכל הזדמנות שיש לכם בחיים ליצור קשרים – תעשו את זה. אין לכם מושג כמה זה ישנה לכם את החיים. קשרים נכונים הם כמו ״אינטרנט אנושי״ – רשת ביטחון שמספקת מידע, תמיכה ופתרונות בדיוק בשנייה שאתם צריכים אותם.
+              </p>
+              <p>לילה טוב לכולם! 🤍</p>
             </div>
           </motion.div>
 
@@ -82,7 +85,7 @@ const LatestInsight = () => {
             {expanded ? "הצג פחות ↑" : "המשך קריאה ↓"}
           </button>
 
-          <Reactions insightId="latest-defense-is-attack" />
+          <Reactions insightId="latest-human-internet" />
         </div>
       </motion.div>
     </section>
