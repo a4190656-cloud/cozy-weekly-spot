@@ -14,6 +14,7 @@ import {
   Pill,
   ShieldAlert,
   Flame,
+  Swords,
   type LucideIcon,
 } from "lucide-react";
 import { motion } from "framer-motion";
