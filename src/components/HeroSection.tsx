@@ -49,56 +49,76 @@ const HeroSection = () => (
         </motion.p>
         <motion.div
           className="mt-8 inline-block"
-          style={{ perspective: 1000 }}
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          {/* Pulsing glow halo */}
-          <motion.div
-            className="relative"
-            animate={{ scale: [1, 1.06, 1] }}
-            transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+          <motion.a
+            href="https://chat.whatsapp.com/DTLgiUJXtSDF8MKZqxcV0r?mode=gi_t"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full px-9 py-4 font-body text-base font-semibold text-white"
+            style={{
+              boxShadow:
+                "inset 0 0 0 1px rgba(255,255,255,0.25), 0 10px 40px -8px rgba(37,211,102,0.6), 0 0 80px -16px rgba(37,211,102,0.55)",
+            }}
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.97 }}
+            transition={{ type: "spring", stiffness: 320, damping: 20 }}
           >
+            {/* Rotating aurora ring */}
             <motion.span
               aria-hidden
-              className="absolute inset-0 -z-10 rounded-2xl bg-[#25D366] blur-2xl"
-              animate={{ opacity: [0.35, 0.75, 0.35], scale: [1, 1.15, 1] }}
-              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="pointer-events-none absolute inset-0"
+              style={{
+                background:
+                  "conic-gradient(from 0deg, transparent 0deg, rgba(255,255,255,0.55) 50deg, transparent 110deg, transparent 360deg)",
+              }}
+              animate={{ rotate: 360 }}
+              transition={{ duration: 5, repeat: Infinity, ease: "linear" }}
             />
-            <motion.a
-              href="https://chat.whatsapp.com/DTLgiUJXtSDF8MKZqxcV0r?mode=gi_t"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative inline-flex items-center gap-2 rounded-2xl bg-gradient-to-br from-[#25D366] via-[#1ebe5a] to-[#128C7E] px-8 py-4 font-body text-base font-bold text-white shadow-2xl shadow-[#25D366]/50 ring-2 ring-white/20"
-              style={{ transformStyle: "preserve-3d" }}
-              animate={{
-                rotateY: [0, 360],
-                y: [0, -10, 0, -5, 0],
-                rotateX: [0, 8, 0, -8, 0],
+            {/* Inner glass fill */}
+            <span
+              aria-hidden
+              className="absolute inset-[1.5px] rounded-full"
+              style={{
+                background:
+                  "linear-gradient(135deg, #25D366 0%, #1ebe5a 55%, #128C7E 100%)",
               }}
-              transition={{
-                rotateY: { duration: 4, repeat: Infinity, ease: "linear" },
-                y: { duration: 1.8, repeat: Infinity, ease: "easeInOut" },
-                rotateX: { duration: 3, repeat: Infinity, ease: "easeInOut" },
-              }}
-              whileHover={{ scale: 1.12 }}
-              whileTap={{ scale: 0.95 }}
+            />
+            {/* Shine sweep on hover */}
+            <span
+              aria-hidden
+              className="pointer-events-none absolute inset-0 translate-x-[-120%] skew-x-[-20deg] bg-gradient-to-r from-transparent via-white/45 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-[120%]"
+            />
+            {/* Live pulsing dot */}
+            <motion.span
+              aria-hidden
+              className="relative z-10 inline-flex h-2.5 w-2.5 rounded-full bg-white shadow-[0_0_12px_rgba(255,255,255,0.95)]"
+              animate={{ scale: [1, 1.6, 1], opacity: [0.85, 1, 0.85] }}
+              transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <span className="relative z-10 tracking-wide">הצטרפו לקבוצה</span>
+            <motion.svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="relative z-10"
+              animate={{ y: [0, -2, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             >
-              <motion.svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                animate={{ rotate: [0, -15, 15, -10, 10, 0] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-              </motion.svg>
-              הצטרפו לקבוצה
-            </motion.a>
-          </motion.div>
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </motion.svg>
+          </motion.a>
+          {/* Soft floating glow under the button */}
+          <motion.div
+            aria-hidden
+            className="mx-auto mt-3 h-3 w-3/4 rounded-full bg-[#25D366] blur-2xl"
+            animate={{ opacity: [0.4, 0.75, 0.4], scaleX: [0.9, 1.08, 0.9] }}
+            transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
+          />
         </motion.div>
       </div>
     </div>
