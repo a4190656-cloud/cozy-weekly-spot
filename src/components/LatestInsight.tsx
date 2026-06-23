@@ -1,4 +1,4 @@
-import { Calendar, Hourglass } from "lucide-react";
+import { Calendar, Heart } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Reactions from "./Reactions";
@@ -34,7 +34,7 @@ const LatestInsight = () => {
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Calendar className="h-4 w-4" />
-              <time>י״ג סיון תשפ״ו</time>
+              <time>כ׳ סיון תשפ״ו</time>
             </div>
             <motion.div
               initial={{ scale: 0, rotate: -30 }}
@@ -43,16 +43,16 @@ const LatestInsight = () => {
               transition={{ type: "spring", stiffness: 180, delay: 0.3 }}
               className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-navy shadow-md ring-4 ring-gold/10"
             >
-              <Hourglass className="h-7 w-7" strokeWidth={2.2} />
+              <Heart className="h-7 w-7" strokeWidth={2.2} />
             </motion.div>
           </div>
 
           <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
-            הטראומה ממחר ⏳
+            ומכאן קמים! 💪
           </h3>
 
           <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
-            מכירים את זה שאתם יושבים לעשות משהו פשוט – לעבוד, ללמוד, או אפילו סתם לשתות קפה – אבל הראש שלכם כבר נמצא חמישה צעדים קדימה? המוח מריץ סרטים, מתכנן את המשימות של שבוע הבא, דואג מה יהיה עם הפרנסה בעוד שנה, או נלחץ מאיזה פחד עתידי שעוד לא נולד בכלל.
+            יש רגעים שאדם נופל. לא כי הוא רע — אלא כי הוא בן אדם. יש יצר, יש חולשה, ולפעמים היא גוברת.
           </p>
 
           <motion.div
@@ -63,36 +63,38 @@ const LatestInsight = () => {
           >
             <div className="mt-4 max-w-2xl space-y-4 font-body leading-relaxed text-muted-foreground">
               <p>
-                הבעיה היא, שכשאנחנו מסתכלים רחוק מדי קדימה – אנחנו לא רואים דרך, אנחנו רואים הר.
+                (אני לוקח סיכון שאני יקבל ביקורת על התובנה הזאת אבל אני לא מפחד..)
               </p>
               <p>
-                וההר הזה כבד בטירוף. הוא מייצר עומס, דחיינות, ובמקומות הקשוחים יותר – הוא מכניס אותנו ישר למערבולת של לחץ, ייאוש וחרדות. המוח פשוט קורס תחת המשקל של ה״מה יהיה״.
+                כן, זה חטא.
+                <br />
+                לא — זה לא מותר.
+                <br />
+                וזה גם לא מה שצריך להיות.
               </p>
               <p>
-                התפקיד שלנו בעולם הוא לא לפתור את המחר. התפקיד שלנו הוא לחיות את העכשיו.
+                אבל נפילה לא מבטלת את מי שאתה,
+                ולא אומרת שה׳ הפסיק לאהוב אותך.
               </p>
               <p>
-                בכל סיטואציה בחיים, יש רק שאלה אחת ויחידה שצריכה להחזיק לנו את ההגה:
+                הטעות היא בשני הקצוות:
+                לא להגיד "הכול בסדר, זה מותר"
+                ולא להגיד "אני אבוד".
               </p>
               <p>
-                🫵 מה הקב״ה רוצה ממני ממש עכשיו?!
+                האמת פשוטה ובריאה:
               </p>
               <p>
-                לא בעוד שנה, לא מחר בבוקר. עכשיו, ברגע הזה.
+                אני בנפילה עכשיו.
+                <br />
+                זה לא המצב האידיאלי שלי.
+                <br />
+                אבל אני עדיין כאן —
               </p>
-              <p>
-                אם אתה עכשיו עם המשפחה – תהיה שם ב-100%. אם אתה באמצע משימה בעבודה – תתרכז רק בה. אם אתה בקושי או באתגר – תתמודד רק עם הדקה הנוכחית.
+              <p className="font-semibold text-foreground">
+                ומכאן קמים! 💪
               </p>
-              <p>
-                כשאתה מפרק את החיים לרגעים, המשקולת הגדולה פשוט נעלמת. אין ייאוש ואין טראומה, כי עם ה״עכשיו״ תמיד יש לנו כוח להתמודד. השם לא מעמיס עליך את העתיד, הוא נותן לך חמצן ואנרגיה בדיוק לשנייה הזו.
-              </p>
-              <p>
-                בשורה התחתונה:
-              </p>
-              <p>
-                המחר הוא אשליה, והעבר כבר עבר. המקום היחיד שבו יש לך כוח לשנות, לפעול ולהתחבר באמת – זה כאן ועכשיו. שחררו את הסרטים קדימה, ותראו איך פתאום נהיה לכם אוויר בנשמה. 💛💪
-              </p>
-              <p>המשך יום מוצלח! 🫶</p>
+              <p>יום מוצלח לכולנו 👌</p>
             </div>
           </motion.div>
 
@@ -103,7 +105,7 @@ const LatestInsight = () => {
             {expanded ? "הצג פחות ↑" : "המשך קריאה ↓"}
           </button>
 
-          <Reactions insightId="latest-trauma-tomorrow" />
+          <Reactions insightId="latest-from-here-we-rise" />
         </div>
       </motion.div>
     </section>
