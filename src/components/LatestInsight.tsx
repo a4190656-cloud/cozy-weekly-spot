@@ -1,8 +1,7 @@
-import { Calendar, Heart } from "lucide-react";
+import { Calendar, Bot } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Reactions from "./Reactions";
-
 
 const LatestInsight = () => {
   const [expanded, setExpanded] = useState(false);
@@ -34,7 +33,7 @@ const LatestInsight = () => {
           <div className="flex items-start justify-between gap-4">
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Calendar className="h-4 w-4" />
-              <time>כ׳ סיון תשפ״ו</time>
+              <time>ט״ו תמוז תשפ״ו</time>
             </div>
             <motion.div
               initial={{ scale: 0, rotate: -30 }}
@@ -43,16 +42,16 @@ const LatestInsight = () => {
               transition={{ type: "spring", stiffness: 180, delay: 0.3 }}
               className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold to-gold-light text-navy shadow-md ring-4 ring-gold/10"
             >
-              <Heart className="h-7 w-7" strokeWidth={2.2} />
+              <Bot className="h-7 w-7" strokeWidth={2.2} />
             </motion.div>
           </div>
 
           <h3 className="mt-4 font-display text-xl font-semibold text-foreground md:text-2xl lg:text-3xl">
-            ומכאן קמים! 💪
+            אשליית ה-AI
           </h3>
 
           <p className="mt-4 max-w-2xl font-body leading-relaxed text-muted-foreground">
-            יש רגעים שאדם נופל. לא כי הוא רע — אלא כי הוא בן אדם. יש יצר, יש חולשה, ולפעמים היא גוברת.
+            אנחנו חיים בעידן מטורף שבו כל התשובות שבעולם נמצאות במרחק לחיצת כפתור. צריך פתרון לקוד? הסבר על מושג מורכב? רעיון קריאייטיבי? תוך 10 שניות של עבודה מול הבינה המלאכותית אנחנו מקבלים פתרון מושלם, ומרגישים לרגע כמו גאונים שכבשו את הפסגה.
           </p>
 
           <motion.div
@@ -63,38 +62,52 @@ const LatestInsight = () => {
           >
             <div className="mt-4 max-w-2xl space-y-4 font-body leading-relaxed text-muted-foreground">
               <p>
-                (אני לוקח סיכון שאני יקבל ביקורת על התובנה הזאת אבל אני לא מפחד..)
+                אבל אז מגיע הנתק הפנימי. שמתם לב מה קורה חמש דקות אחר כך?
               </p>
               <p>
-                כן, זה חטא.
-                <br />
-                לא — זה לא מותר.
-                <br />
-                וזה גם לא מה שצריך להיות.
+                המידע הזה פשוט מתאדה מהראש כאילו לא היה, ולרוב אנחנו פשוט שוכחים מה למדנו פה.
               </p>
               <p>
-                אבל נפילה לא מבטלת את מי שאתה,
-                ולא אומרת שה׳ הפסיק לאהוב אותך.
-              </p>
-              <p>
-                הטעות היא בשני הקצוות:
-                לא להגיד "הכול בסדר, זה מותר"
-                ולא להגיד "אני אבוד".
-              </p>
-              <p>
-                האמת פשוטה ובריאה:
-              </p>
-              <p>
-                אני בנפילה עכשיו.
-                <br />
-                זה לא המצב האידיאלי שלי.
-                <br />
-                אבל אני עדיין כאן —
+                כאן בדיוק מסתתר חוק טבע פסיכולוגי חמקמק: מה שאתה לומד ומקבל בקלות, אתה נוטה לשכוח באותה הקלות בדיוק.
               </p>
               <p className="font-semibold text-foreground">
-                ומכאן קמים! 💪
+                למה המוח שלנו "מזלזל" במה שבא בקלות?
               </p>
-              <p>יום מוצלח לכולנו 👌</p>
+              <p>
+                הבעיה היא לא בזיכרון שלכם, אלא במנגנון ההישרדות של המוח. המוח הוא איבר יעיל בצורה קיצונית – הוא משקיע משאבי שמירה ואנרגיה רק במה שדרש ממנו מאמץ, ריכוז ו"עבודה שחורה".
+              </p>
+              <p>
+                כשאין חיכוך בתהליך, אין הטמעה בזיכרון לטווח ארוך.
+                <br />
+                כשאנחנו משיגים תשובה קלה בלי להזיע, בלי לחקור ובלי לטעות בדרך, המוח מקטלג את המידע הזה כ"חד-פעמי".
+              </p>
+              <p className="font-semibold text-foreground">
+                איך הופכים ידע מהיר לנכס קבוע?
+              </p>
+              <p>
+                הפתרון הוא כמובן לא להפסיק להשתמש בכלים הטכנולוגיים הבלתי רגילים שיש לנו היום, אלא לייצר באופן יזום את ה"חיכוך" שהמוח כל כך צריך כדי לזכור.
+              </p>
+              <p>
+                קיבלתם פתרון או תובנה ב-10 שניות? אל תמשיכו מיד לדבר הבא. עצרו,
+              </p>
+              <ul className="list-inside list-disc space-y-2 marker:text-gold">
+                <li>
+                  <strong className="text-foreground">תעצרו ותסכמו:</strong> תכתבו את התשובה שקיבלתם במילים שלכם, אפילו בשורה אחת קצרה במחברת או בנוטס.
+                </li>
+                <li>
+                  <strong className="text-foreground">תיישמו מיד בשטח:</strong> אל תשאירו את זה תיאורטי. קחו את הקוד, את הרעיון או את העצה ותשתמשו בהם בפועל בתוך השעה הקרובה.
+                </li>
+                <li>
+                  <strong className="text-foreground">תעבירו את זה הלאה:</strong> הדרך הטובה ביותר ללמוד היא ללמד. תסבירו את מה שהבנתם הרגע לבן אדם אחר, או אפילו לעצמכם בקול רם.
+                </li>
+              </ul>
+              <p className="font-semibold text-foreground">
+                שורה תחתונה:
+              </p>
+              <p>
+                אם לקח לכם 10 שניות בלבד לקבל את המידע, תנו לו עוד דקה אחת של מחשבה מעמיקה ויצירת כלי – כדי שלא תאבדו אותו תוך 5 דקות. ערך אמיתי נבנה בתהליך ובדרך, לא רק בשורה התחתונה של התוצאה.
+              </p>
+              <p>יום מוצלח וחזק לפנינו! 👌</p>
             </div>
           </motion.div>
 
@@ -105,7 +118,7 @@ const LatestInsight = () => {
             {expanded ? "הצג פחות ↑" : "המשך קריאה ↓"}
           </button>
 
-          <Reactions insightId="latest-from-here-we-rise" />
+          <Reactions insightId="latest-ai-illusion" />
         </div>
       </motion.div>
     </section>
