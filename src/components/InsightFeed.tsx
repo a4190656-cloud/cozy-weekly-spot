@@ -17,6 +17,8 @@ import {
   Globe,
   Swords,
   Hourglass,
+  Bot,
+  Target,
   type LucideIcon,
 } from "lucide-react";
 
